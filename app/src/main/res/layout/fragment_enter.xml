@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Enter"
+    android:background="@color/black0B0B0B">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp">
+
+        <ImageButton
+            android:id="@+id/button_back_2"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:background="@color/black0B0B0B"
+            android:src="@drawable/back_button" />
+    </FrameLayout>
+
+    <ImageView
+        android:layout_marginTop="70dp"
+        android:id="@+id/image_KOSU"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/kosu"
+        android:layout_marginBottom="60dp"/>
+
+
+    <FrameLayout
+        android:layout_gravity="center"
+        android:layout_width="380dp"
+        android:layout_height="60dp"
+        android:background="@color/black212121"
+        android:layout_marginBottom="20dp">
+
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:layout_marginLeft="10dp"
+            android:hint="Email"
+            android:textColorHint="@color/gray7A7A7A"
+            android:textSize="25dp"
+            android:backgroundTint="@color/black212121"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_gravity="center"
+        android:layout_width="380dp"
+        android:layout_height="60dp"
+        android:background="@color/black212121"
+        android:layout_marginBottom="100dp">
+
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:layout_marginLeft="10dp"
+            android:hint="Password"
+            android:textColorHint="@color/gray7A7A7A"
+            android:textSize="25dp"
+            android:backgroundTint="@color/black212121"/>
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/entry"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:text="Войти"
+        android:textColor="@color/white"
+        android:background="@color/purple_1"
+        android:layout_gravity="center_horizontal"
+        android:textSize="20dp"
+        android:layout_marginBottom="30dp"/>
+
+    <Button
+        android:id="@+id/reg"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/purple_1"
+        android:text="Зарегистрироваться"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/TextViewError"
+        android:layout_width="match_parent"
+        android:layout_height="79dp"
+        android:text="test"
+        android:textSize="20dp"
+        android:textColor="@color/white"></TextView>
+
+</LinearLayout>
